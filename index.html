@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="card-number" placeholder="Card Number" required><br>
+            <input type="password" id="pin" placeholder="PIN" required><br>
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-message"></p>
+        <button id="go-to-register">Don't have an account? Register</button>
+    </div>
+
+    <!-- Register Page -->
+    <div id="register-container" style="display: none;">
+        <h2>Register</h2>
+        <form id="register-form">
+            <input type="text" id="name" placeholder="Full Name" required><br>
+            <input type="text" id="reg-card-number" placeholder="Card Number" required><br>
+            <input type="password" id="reg-pin" placeholder="PIN" required><br>
+            <button type="submit">Register</button>
+        </form>
+        <p id="registration-error-message"></p>
+        <button id="go-to-login">Already have an account? Login</button>
+    </div>
+
+    <!-- Dashboard Page (Only visible after login) -->
+    <div id="dashboard-container" style="display: none;">
+        <h2>Welcome, <span id="user-name"></span></h2>
+        <p id="current-balance"></p>
+        <button id="check-balance">Check Balance</button>
+        <button id="withdraw">Withdraw</button>
+        <button id="deposit">Deposit</button>
+        <button id="transfer">Transfer</button>
+        <button id="exit">Logout</button>
+        <!-- Theme Toggle button here -->
+        <button id="theme-toggle">Toggle Theme</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

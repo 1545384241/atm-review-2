@@ -1,0 +1,74 @@
+/* Default Light Theme Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#login-container, #register-container, #dashboard-container {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Dark Theme Styles */
+body.dark-theme {
+    background-color: #2c2c2c;
+    color: #fff;
+}
+
+body.dark-theme #login-container,
+body.dark-theme #register-container,
+body.dark-theme #dashboard-container {
+    background-color: #333;
+    border: 1px solid #444;
+}
+
+body.dark-theme button {
+    background-color: #555;
+}
+
+body.dark-theme button:hover {
+    background-color: #666;
+}
+
+/* Additional Styles */
+#exit {
+    background-color: red;
+}
+
+#exit:hover {
+    background-color: darkred;
+}
